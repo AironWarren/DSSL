@@ -39,13 +39,13 @@ def open_browser(request):
     options = Options()
     selenoid_capabilities = {
         "browserName": "chrome",
+        "download.default_directory": resources_dir,
+        "download.prompt_for_download": False,
         "browserVersion": browser_version,
         "selenoid:options": {
             "enableVNC": True,
             "enableVideo": True
-        },
-        "download.default_directory": resources_dir,
-        "download.prompt_for_download": False
+        }
     }
 
     options.capabilities.update(selenoid_capabilities)
@@ -60,7 +60,8 @@ def open_browser(request):
     browser.config.driver = driver
 
     browser.config.hold_browser_open = True
-    browser.open("https://www.dssl.ru/products/")
+    # browser.open("https://www.dssl.ru/products/")
+    browser.open("https://demoqa.com/automation-practice-form")
 
     yield
 
