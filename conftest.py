@@ -59,9 +59,10 @@ def open_browser(request):
 
     browser.config.driver = driver
 
+    browser.config.window_height = 1800
+    browser.config.window_width = 1800
     browser.config.hold_browser_open = True
     browser.open("https://www.dssl.ru")
-    # browser.open("https://demoqa.com/automation-practice-form")
 
     yield
 
