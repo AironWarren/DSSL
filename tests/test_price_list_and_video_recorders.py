@@ -27,9 +27,9 @@ def test_DSSL_company_online_store(open_browser):
 
     video_recorders.show_options_for_the_selected_parameters()
 
-    row = working_with_files.number_of_lines_in_the_file(resources_dir + '\DSSL_price.xlsx')
+    row = working_with_files.number_of_lines_in_the_file(resources_dir + '/DSSL_price.xlsx')
 
-    working_with_files.del_file(resources_dir + '\DSSL_price.xlsx')
+    working_with_files.del_file(resources_dir + '/DSSL_price.xlsx')
 
 
 
