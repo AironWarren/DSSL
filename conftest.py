@@ -60,8 +60,8 @@ def open_browser(request):
     browser.config.driver = driver
 
     browser.config.hold_browser_open = True
-    # browser.open("https://www.dssl.ru/products/")
-    browser.open("https://demoqa.com/automation-practice-form")
+    browser.open("https://www.dssl.ru")
+    # browser.open("https://demoqa.com/automation-practice-form")
 
     yield
 
