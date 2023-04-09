@@ -19,6 +19,8 @@ def test_DSSL_company_online_store(open_browser):
 
     video_recorders.go_to_the_subsection()
 
+    video_recorders.submit_filter()
+
     video_recorders.enter_the_price('100000', '350000')
 
     video_recorders.choose_a_brand()
